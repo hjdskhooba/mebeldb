@@ -19,7 +19,7 @@ const authOptions = {
 };
 
 server.use(middlewares);
-server.use(authOptions.auth(authOptions.authConfig));
+server.use(authOptions.auth);
 server.use(router);
 
 server.listen(port, () => {
